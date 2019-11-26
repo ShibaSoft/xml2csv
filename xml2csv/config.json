@@ -1,0 +1,38 @@
+{
+  "BasePath": "C:\\Users\\Public\\Documents\\xml-files\\",
+  "OutputFile": "C:\\Users\\Public\\Documents\\output.csv",
+  "Namespaces": [
+    {
+      "Alias": "name",
+      "Value": "http://full-url-for-namespace.com/"
+    }
+  ],
+  "Elements": [
+    {
+      "ColumnName": "Example Attribute Match",
+      "MatchType": "ElementAttribute",
+      "ElementName": "elementName",
+      "AttributeName": "attributeName"
+    },
+    {
+      "ColumnName": "Example Element Match",
+      "MatchType": "ElementValue",
+      "ElementName": "elementName"
+    },
+    {
+      "ColumnName": "Example Child Element Match",
+      "MatchType": "ChildElementValue",
+      "ElementName": "elementName",
+      "ParentElementName": "parentElementName"
+    },
+    {
+      "ColumnName": "Example Parent And Sibling Attribute Match",
+      "MatchType": "ChildElementSiblingWithGivenAttribute",
+      "ElementName": "rdf:value",
+      "ParentElementName": "parentElementName",
+      "SiblingElementName": "siblingElementName",
+      "SiblingAttributeName": "attributeName",
+      "SiblingAttributeValue": "attributeValueMatch"
+    }
+  ]
+}
